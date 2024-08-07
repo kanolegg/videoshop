@@ -1,0 +1,65 @@
+.bootstrap-tagsinput {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #555;
+  max-width: 100%;
+  cursor: text;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  color: #4f4f4f;
+  height: 32px;
+  line-height: 3;
+  padding: 10px 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: .6rem;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #eceff1;
+  border-radius: 20px;
+  transition: opacity .3s linear;
+  word-wrap: break-word;
+  box-shadow: none;
+  text-transform: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bootstrap-tagsinput .tag i {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #afafaf;
+}
+.bootstrap-tagsinput .tag i:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag i:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}

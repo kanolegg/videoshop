@@ -1,0 +1,7 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^payment/([^/\.]+)/?$ payment.php?id=$1 [L]
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

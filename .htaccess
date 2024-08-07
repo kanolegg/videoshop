@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^category/(.+)$ category.php?url=$1 [QSA,L]
+RewriteRule ^search/(.+)$ search.php?query=$1 [QSA,L]
+RewriteRule ^product/([^/\.]+)/?$ product.php?id=$1 [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
